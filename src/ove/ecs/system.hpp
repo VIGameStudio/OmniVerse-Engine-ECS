@@ -6,7 +6,7 @@
 
 namespace ove
 {
-	namespace core
+	namespace ecs
 	{
 		struct sys_base_t
 		{

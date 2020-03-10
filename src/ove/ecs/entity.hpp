@@ -7,7 +7,7 @@
 
 namespace ove
 {
-	namespace core
+	namespace ecs
 	{
 		struct cmp_base_t
 		{
@@ -61,7 +61,7 @@ namespace ove
 		{
 		private:
 			template <typename C> using cmp_pool_t = pool_t<std::pair<size_t, C>>;
-			using cmp_map_t = std::unordered_map<size_t, pool_base_t*>;
+			using cmp_map_t = std::unordered_map<size_t, core::pool_base_t*>;
 
 			template <typename C>
 			inline cmp_pool_t<C>& getPool()
